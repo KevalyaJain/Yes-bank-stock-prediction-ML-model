@@ -13,7 +13,7 @@ So, my aim was to apply different regression models on the given data to predict
 * Visualizations makes things easier so, performed exploratory data analysis and checked for data distribution.
 * Used log transformation to make them normally distributed features as the features were a bit skewed.
 * Checked for multicollinearity to check if the features are depedent or independent of each other.
-* Splitted the dataset into training and testing data (70% of the data is used for training & 30% of the data is being used for testing).
+* Splitted the dataset into training and testing data (80% of the data is used for training & 20% of the data is being used for testing).
 * Created machine learning models using the following algorithms:
   1. Linear Regression
   2. Ridge Regession
@@ -57,23 +57,40 @@ Below is the perfomance graph of lasso regression model based on predicted and a
 ![image](https://user-images.githubusercontent.com/85817763/179199192-3d1d0c27-b7ce-4b7e-b2e7-a9fe7770282a.png)
 
 
-➡️ *KNN*
-
-Below is the perfomance graph of KNN model based on predicted and actual output.
-
-![image](https://user-images.githubusercontent.com/85817763/179199446-15012cae-12fb-4185-a938-3d63dfd5843d.png)
-
-
-## Metrics Comparison
-
-All the models are evaluated on the basis of following evaluation metrics.
-
-![image](https://user-images.githubusercontent.com/85817763/183074627-4bd7e7c8-c6a5-4d17-9f57-c23c8aa11666.png)
 
 ## Conclusions
+Yes bank stock prediction
 
-*  Independent variables(input variable) have a very high influence on dependent variable(target variable).
-*   The accuracy for each model is more than 95%.
-*  In this case, Linear Regression has given the best results with lowest MSE and RMSE and highest R square value scores out of all.
-*  KNN performed the worst out of all.
-*  As we know that, lasso regression automatically selects only those features that are useful and hence discarded some features when applied in this case, whereas in this case all the features were important for prediction purpose so it ended up giving poor results.
+We load our data using Pandas
+
+we saw that our data in right skewed with the help of distplot
+
+then we saw the trends of our each features
+
+after that we have created a new feature that tells us about the monthly change
+
+percentage on the basis of our close price
+
+then we visualized average closing price of each year
+
+and we saw the histogram and trend of the new column
+
+and visualized our outliers using box plot
+
+then we got that our data need to be in uniform distribution so we applied log10 transformation on our data and set date column as index
+
+we have only one missing value in new created column which was filled by 0.03 value
+
+we split or data into 70-30 ratio of train and test
+
+now using Min Max Scaler we scaled our data
+
+and now we started our ML modelling
+
+we used Linear regression and evaluated its MSE RMSE MAE and R2 values and got best results
+
+then we used Lasso model and did Lasso Cross Validation with best alpha hyperparameter as 0.0001 and again we got almost same matrices
+
+and finally we used Ridge regression model and Ridge Cross Validation with best alpha hyperparameter as 0.0001 and got the same results
+
+as our data is so limited and we dont have prices on per day basis so we can not perform time series analysis on the model so we will go with simple linear regression model as our best model for this regression prediction model.
