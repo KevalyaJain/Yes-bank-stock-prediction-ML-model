@@ -59,38 +59,37 @@ Below is the perfomance graph of lasso regression model based on predicted and a
 
 
 ## Conclusions
-Yes bank stock prediction
 
-We load our data using Pandas
+* We load our data using Pandas
 
-we saw that our data in right skewed with the help of distplot
+* we saw that our data in right skewed with the help of distplot
 
-then we saw the trends of our each features
+* then we saw the trends of our each features
 
-after that we have created a new feature that tells us about the monthly change
+* after that we have created a new feature that tells us about the monthly change
 
-percentage on the basis of our close price
+* percentage on the basis of our close price
 
-then we visualized average closing price of each year
+* then we visualized average closing price of each year
 
-and we saw the histogram and trend of the new column
+* and we saw the histogram and trend of the new column
 
-and visualized our outliers using box plot
+* and visualized our outliers using box plot
 
-then we got that our data need to be in uniform distribution so we applied log10 transformation on our data and set date column as index
+* then we got that our data need to be in uniform distribution so we applied log10 transformation on our data and set date column as index
 
-we have only one missing value in new created column which was filled by 0.03 value
+* we have only one missing value in new created column which was filled by 0.03 value
 
-we split or data into 70-30 ratio of train and test
+* we split or data into 70-30 ratio of train and test
 
-now using Min Max Scaler we scaled our data
+* now using Min Max Scaler we scaled our data
 
-and now we started our ML modelling
+* and now we started our ML modelling
 
-we used Linear regression and evaluated its MSE RMSE MAE and R2 values and got best results
+* we used Linear regression and evaluated its MSE RMSE MAE and R2 values and got best results
 
-then we used Lasso model and did Lasso Cross Validation with best alpha hyperparameter as 0.0001 and again we got almost same matrices
+* then we used Lasso model and did Lasso Cross Validation with best alpha hyperparameter as 0.0001 and again we got almost same matrices
 
-and finally we used Ridge regression model and Ridge Cross Validation with best alpha hyperparameter as 0.0001 and got the same results
+* and finally we used Ridge regression model and Ridge Cross Validation with best alpha hyperparameter as 0.0001 and got the same results
 
 as our data is so limited and we dont have prices on per day basis so we can not perform time series analysis on the model so we will go with simple linear regression model as our best model for this regression prediction model.
