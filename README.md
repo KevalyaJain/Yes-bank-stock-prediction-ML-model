@@ -1,8 +1,9 @@
 # Yes-Bank-Stock-Closing-Price-Prediction
 
 ## Problem Statement
-Yes Bank is a well-known bank in the Indian financial domain which provides wide range of services and solutions right from bank accounts,deposits, cards, cash management, privilege banking and many more. As the data is all about stock price. So in this project i will be analyzing the patterns of the dataset by performing exploratary data analysis and try to build a machine learning model for predicting the closing stock price. The tools for data analysis and model building used in this project are the packages from python library such as NumPy, Pands, Matplotlib, Seaborn, Linear regression, Lasso, Lasso Cross Validation, Ridge, Ridge Cross validation etc.
+Yes Bank is a well-known bank in the Indian financial domain. Since 2018, it has been in the news because of the fraud case involving Rana Kapoor. Owing to this fact, it was interesting to see how that impacted the stock prices of the company and whether Time series models or any other predictive models can do justice to such situations. This dataset has monthly stock prices of the bank since its inception and includes closing, starting, highest, and lowest stock prices of every month. The main objective is to predict the stock’s closing price of the month.
 ![image](https://user-images.githubusercontent.com/85817763/179193664-22721f34-db21-4647-a323-46be7acc561e.png)
+
 
 ## Project Approach
 A stock (also known as equity) is a security that represents the ownership of a fraction of a corporation. This entitles the owner of the stock to a proportion of the corporation's assets and profits equal to how much stock they own. Units of stock are called "shares." The value of shares depends on the investors, whether more people are buying the stock or selling it, follows the simple supply – demand rule.
@@ -19,6 +20,20 @@ So, my aim was to apply different regression models on the given data to predict
   3. Lasso Regression
   4. K Nearest Neighbours (KNN)
 * Compared model performance using different evaluation metrics in order to get the best performing model.
+
+
+## Variables Description
+Date:- It contains 1st day of every month from year 2005
+
+Open:- The open prices of yes bank Stock on that particular date
+
+High:- The Highest price it reached on that day
+
+Low:- The lowest price it reached on that day
+
+close:- The Closing price of Yes bank stock on that particular date (Target Variable)
+
+We can clearly see that our mean and much higher than our median in every feature so this distribution must be right skewed.
 
 ## Machine Learning Models
 
