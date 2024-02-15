@@ -13,12 +13,11 @@ So, my aim was to apply different regression models on the given data to predict
 * Visualizations makes things easier so, performed exploratory data analysis and checked for data distribution.
 * Used log transformation to make them normally distributed features as the features were a bit skewed.
 * Checked for multicollinearity to check if the features are depedent or independent of each other.
-* Splitted the dataset into training and testing data (80% of the data is used for training & 20% of the data is being used for testing).
+* Splitted the dataset into training and testing data (70% of the data is used for training & 30% of the data is being used for testing).
 * Created machine learning models using the following algorithms:
   1. Linear Regression
   2. Ridge Regession
   3. Lasso Regression
-  4. K Nearest Neighbours (KNN)
 * Compared model performance using different evaluation metrics in order to get the best performing model.
 
 
